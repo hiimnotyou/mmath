@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #iframe-container {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        iframe {
+            border: none;
+            width: 640px; /* Initial width */
+            height: 320px; /* Initial height */
+            transform-origin: top left;
+        }
+    </style>
+</head>
+<body>
+
+<div id="iframe-container">
+    <iframe scrolling="no" src="https://developmentbuild.herokuapp.com/service/hvtrs8%2F-arpgtkzg.ko-eobgd-gqgdkhgzbzarh7vlgxatav7wxw%3Ffetiae%3Fpkxgl5%26msTepskol%3D33%2C0%24opignvavimn%3Flcnfsaare"></iframe>
+</div>
+
+<script>
+    // Get the screen width
+    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    // Set the initial width of the iframe
+    var initialWidth = 640;
+
+    // Calculate the scale needed to fit the iframe perfectly on the screen
+    var calculatedScale = screenWidth / initialWidth;
+
+    // Apply the scale to the iframe
+    document.querySelector('iframe').style.transform = 'scale(' + calculatedScale + ')';
+</script>
+
+</body>
+</html>
